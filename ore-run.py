@@ -16,7 +16,7 @@ orepath = './target/release/ore'
 
 def start_process():
     
-    cmd = [orepath', '--rpc', rpc, '--keypair', keypair, '--priority-fee', priority_fee, 'mine', '--threads', threads]
+    cmd = [orepath, '--rpc', rpc, '--keypair', keypair, '--priority-fee', priority_fee, 'mine', '--threads', threads]
     proc = subprocess.Popen(cmd)
     return {'process': proc, 'cmd': cmd}
 
